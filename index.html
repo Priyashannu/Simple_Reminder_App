@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="Style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder Application</title>
+</head>
+<body>
+    <script src="Functionality.js"></script>
+    <div class="container">
+        <h1> Reminder Application</h1>
+        <label for="">Title</label>
+        <select name="cars" id="title">
+            <option value="Wake Up">Wake Up</option>
+            <option value="Go To Gym">Go To Gym </option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Meetings">Meetings</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Quick Nap">Quick Nap</option>
+            <option value="Go To Library">Go To Library</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Go To Sleep">Go To Sleep</option>
+        </select>
+
+
+        <label for="">Time</label>
+        <input type="time" id="time"/>
+
+        <button style="width:100%" onclick="scheduleReminder()">Schedule Reminder </button>
+
+        <table border="1">
+            <thead>
+                <tr> 
+                    <th>Title</th>
+                    <th> Time </th>
+                    <th> Action </th>
+                </tr>
+            </thead>
+            <tbody id="reminderTableBody"></tbody>
+        </table>
+
+        <audio src="notifiactionSound.mp3" id="notificationSound"></audio>
+        
+    </div>
+
+</body>
+</html>
+</body>
+</html>
